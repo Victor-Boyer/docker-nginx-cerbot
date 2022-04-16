@@ -4,8 +4,6 @@ An easy way to upload your wordpress website with Docker, Nginx and Certbot.
 
 This configuration will create automatically a reverse proxy, a sll certification for your domain and a empty wordpress.
 
-**======================================**
-
 ## Installation
 
 - Install [docker](https://docs.docker.com/engine/install/).
@@ -23,8 +21,6 @@ cd /docker-nginx-certbot/docker
 ```bash
 mv .env.sample .env
 ```
-
-**======================================**
 
 ## Custom domain name
 
@@ -72,8 +68,6 @@ ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;
 ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
 ...
 ```
-
-**======================================**
 
 ## Usage
 
