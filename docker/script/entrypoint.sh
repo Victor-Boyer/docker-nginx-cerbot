@@ -15,7 +15,7 @@ echo "done. Turning on certbot..."
 # Load the new nginx conf
 nginx -s reload
 # Launch certbot cmd to create the certificate for the specified domain
-certbot certonly --webroot --webroot-path /var/www/html --staging --agree-tos --non-interactive --email "your-mail@example.com" -d call-me-dev.com
+certbot certonly --webroot --webroot-path /var/www/html --agree-tos --non-interactive --email "your-mail@example.com" -d call-me-dev.com
 curl -sSLo /etc/nginx/conf.d/options-ssl-nginx.conf https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/certbot_nginx/_internal/tls_configs/options-ssl-nginx.conf
 # Update the nginx conf to use the new certificate
 rm /etc/nginx/conf.d/default.conf
