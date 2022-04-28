@@ -71,7 +71,7 @@ ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
 
 ## Usage
 
-Note : For staging application, add `--staging` in ```docker-nginx-cerbot/docker/script``` 
+Note : For staging application, add `--staging` in ```docker-nginx-cerbot/docker/script``` line `18` 
 
 Launch docker
 
